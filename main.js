@@ -12,7 +12,7 @@ function muunnin(){
     if (yksikko === 'cf') {
         muunnettuLämpötila = (syote * 1,8 + 32);
         if(muunnettuLämpötila < -459,67){
-            document.getElementById('vastus').innerHTML = "Huomio! Lämpötila on pienempi kuin absoluuttinen nollapiste!";
+            document.getElementById('vastaus').innerHTML = "Huomio! Lämpötila on pienempi kuin absoluuttinen nollapiste!";
         }
     }
 
@@ -20,7 +20,7 @@ function muunnin(){
         else if (yksikko === 'ck') {
             muunnettuLämpötila = syote + 273,15;
             if(muunnettuLämpötila < 0){
-                document.getElementById('vastus').innerHTML = "Huomio! Lämpötila on pienempi kuin absoluuttinen nollapiste!";
+                document.getElementById('vastaus').innerHTML = "Huomio! Lämpötila on pienempi kuin absoluuttinen nollapiste!";
             }
         }
 
@@ -28,28 +28,28 @@ function muunnin(){
         else if (yksikko === 'fc') {
             muunnettuLämpötila = (syote - 32) / 1,8;
             if(muunnettuLämpötila < -273,15){
-                document.getElementById('vastus').innerHTML = "Huomio! Lämpötila on pienempi kuin absoluuttinen nollapiste!";
+                document.getElementById('vastaus').innerHTML = "Huomio! Lämpötila on pienempi kuin absoluuttinen nollapiste!";
             }
         }
 
         else if (yksikko === 'fk') {
             muunnettuLämpötila = (syote + 459,67) / 1,8;
             if(muunnettuLämpötila < 0){
-                document.getElementById('vastus').innerHTML = "Huomio! Lämpötila on pienempi kuin absoluuttinen nollapiste!";
+                document.getElementById('vastaus').innerHTML = "Huomio! Lämpötila on pienempi kuin absoluuttinen nollapiste!";
             }
         }
 
         else if (yksikko === 'kc') {
             muunnettuLämpötila = syote - 273,15;
             if(muunnettuLämpötila < -273,15){
-                document.getElementById('vastus').innerHTML = "Huomio! Lämpötila on pienempi kuin absoluuttinen nollapiste!";
+                document.getElementById('vastaus').innerHTML = "Huomio! Lämpötila on pienempi kuin absoluuttinen nollapiste!";
             }
         }
 
         else if (yksikko === 'kf') {
             muunnettuLämpötila = syote * 1,8 - 459,67
             if(muunnettuLämpötila < -459.67){
-                document.getElementById('vastus').innerHTML = 'Huomio! Lämpötila on pienempi kuin absoluuttinen nollapiste!';
+                document.getElementById('vastaus').innerHTML = 'Huomio! Lämpötila on pienempi kuin absoluuttinen nollapiste!';
             }
         }
 
